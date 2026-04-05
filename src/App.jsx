@@ -1,8 +1,22 @@
+import { Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Home from './pages/Home'
+import RecipeDetails from './pages/RecipeDetails'
+import Favorites from './pages/Favorites'
+import About from './pages/About'
+
 function App() {
   return (
     <div className="min-h-screen bg-white text-gray-800">
-      <h1 className="text-3xl font-bold text-center py-10">PantryChef</h1>
-      <p className="text-center text-gray-500">App is ready. Building next...</p>
+      <Navbar />
+      <main className="max-w-5xl mx-auto">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/recipe/:id" element={<RecipeDetails />} />
+          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </main>
     </div>
   )
 }
