@@ -3,7 +3,7 @@
 | # | Task | Status |
 |---|------|--------|
 | 1 | Scaffold React app with Vite + Tailwind CSS | Done |
-| 2 | Set up project structure (components, pages, services, utils) | Pending |
+| 2 | Set up project structure (components, pages, services, utils) | Done |
 | 3 | Build MealDB API service layer (`mealAPI.js`) | Pending |
 | 4 | Build localStorage utility (`storage.js`) | Pending |
 | 5 | Build Navbar component | Pending |
