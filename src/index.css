@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-warm-50: #faf8f5;
-  --color-warm-100: #f3efe8;
+  --color-warm-50: #eee6d8;
+  --color-warm-100: #f9f6f1;
   --color-warm-200: #e8e2d9;
   --color-warm-300: #d5ccc0;
-  --color-warm-accent: #b8860b;
+  --color-warm-accent: #c9a45c;
 }
 
 a {

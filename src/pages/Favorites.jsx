@@ -40,7 +40,7 @@ export default function Favorites() {
           {favorites.map((meal) => (
             <div
               key={meal.idMeal}
-              className="relative border border-warm-200 rounded-lg overflow-hidden bg-white hover:shadow-md transition-shadow"
+              className="relative border border-warm-200 rounded-lg overflow-hidden bg-warm-100 hover:shadow-md transition-shadow"
             >
               {/* Remove button */}
               <button

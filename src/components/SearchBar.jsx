@@ -12,7 +12,7 @@ export default function SearchBar({ onSearch, onSurprise, loading }) {
 
   return (
     <div className="max-w-xl mx-auto">
-      <form onSubmit={handleSubmit} className="border border-warm-200 rounded-lg p-6 bg-white">
+      <form onSubmit={handleSubmit} className="border border-warm-200 rounded-lg p-6 bg-warm-100">
         {/* Radio toggle */}
         <div className="flex items-center gap-6 mb-4">
           <label className="flex items-center gap-2 cursor-pointer">

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export default function RecipeCard({ meal }) {
   return (
-    <div className="border border-warm-200 rounded-lg overflow-hidden bg-white hover:shadow-md transition-shadow">
+    <div className="border border-warm-200 rounded-lg overflow-hidden bg-warm-100 hover:shadow-md transition-shadow">
       <img
         src={meal.strMealThumb}
         alt={meal.strMeal}

@@ -54,7 +54,7 @@ export default function About() {
 
         {/* Right column: contact & links */}
         <div className="w-full lg:w-72 shrink-0">
-          <div className="border border-warm-200 rounded-lg p-5 bg-white">
+          <div className="border border-warm-200 rounded-lg p-5 bg-warm-100">
             <h2 className="text-sm font-bold text-gray-900 uppercase tracking-wide mb-4">
               Contact & Links
             </h2>

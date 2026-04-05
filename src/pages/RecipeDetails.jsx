@@ -124,10 +124,15 @@ export default function RecipeDetails() {
             </a>
           )}
 
-          <div className="border border-warm-200 rounded-lg p-4 bg-white">
-            <h2 className="text-sm font-bold text-gray-900 uppercase tracking-wide mb-4">
-              Ingredients
-            </h2>
+          <div className="border border-warm-200 rounded-lg p-4 bg-warm-100">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-sm font-bold text-gray-900 uppercase tracking-wide">
+                Ingredients
+              </h2>
+              <span className="text-xs text-gray-500 border border-gray-200 rounded px-2 py-0.5">
+                {ingredients.length} items
+              </span>
+            </div>
             <div className="grid grid-cols-3 gap-3">
               {ingredients.map((item, i) => (
                 <div key={i} className="text-center">
