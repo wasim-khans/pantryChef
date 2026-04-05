@@ -7,8 +7,8 @@
 | 3 | Build MealDB API service layer (`mealAPI.js`) | Done |
 | 4 | Build localStorage utility (`storage.js`) | Done |
 | 5 | Build Navbar component | Done |
-| 6 | Build Home page (search, recipe cards, surprise me) | Pending |
-| 7 | Build Recipe Details page | Pending |
+| 6 | Build Home page (search, recipe cards, surprise me) | Done |
+| 7 | Build Recipe Details page | Done |
 | 8 | Build Favorites page | Pending |
 | 9 | Build About page | Pending |
 | 10 | Set up React Router for navigation | Pending |
