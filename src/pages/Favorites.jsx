@@ -22,7 +22,7 @@ export default function Favorites() {
         </span>
       </div>
 
-      <hr className="border-gray-200 mb-6" />
+      <hr className="border-warm-accent mb-6" />
 
       {favorites.length === 0 ? (
         <div className="text-center py-20 text-gray-400">
@@ -40,7 +40,7 @@ export default function Favorites() {
           {favorites.map((meal) => (
             <div
               key={meal.idMeal}
-              className="relative border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow"
+              className="relative border border-warm-200 rounded-lg overflow-hidden bg-white hover:shadow-md transition-shadow"
             >
               {/* Remove button */}
               <button

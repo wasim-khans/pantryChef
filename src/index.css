@@ -1,6 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+  --color-warm-50: #faf8f5;
+  --color-warm-100: #f3efe8;
+  --color-warm-200: #e8e2d9;
+  --color-warm-300: #d5ccc0;
+  --color-warm-accent: #b8860b;
+}
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+body {
+  background-color: var(--color-warm-50);
 }

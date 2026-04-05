@@ -3,6 +3,23 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { getMealById, extractIngredients } from '../services/mealAPI'
 import { addFavorite, removeFavorite, isFavorite } from '../utils/storage'
 
+// Normalise the inconsistent instruction formats from MealDB
+function parseInstructions(raw) {
+  if (!raw) return []
+
+  return raw
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    // Remove lines that are just "step N" / "Step N" headers
+    .filter((line) => !/^step\s*\d+$/i.test(line))
+    // Drop empty lines
+    .filter((line) => line.length > 0)
+    // Strip leading numbering like "1.", "2)", "1 -", "1:" etc.
+    .map((line) => line.replace(/^\d+[\.\)\-:\s]+\s*/, ''))
+    // Drop any lines that became empty after stripping
+    .filter((line) => line.length > 0)
+}
+
 export default function RecipeDetails() {
   const { id } = useParams()
   const navigate = useNavigate()
@@ -43,9 +60,7 @@ export default function RecipeDetails() {
     return <div className="text-center py-20 text-gray-400 text-sm">Recipe not found.</div>
   }
 
-  const instructions = meal.strInstructions
-    .split(/\r?\n/)
-    .filter((step) => step.trim())
+  const instructions = parseInstructions(meal.strInstructions)
 
   return (
     <div className="px-6 py-6">
@@ -63,7 +78,7 @@ export default function RecipeDetails() {
           <img
             src={meal.strMealThumb}
             alt={meal.strMeal}
-            className="w-full max-h-96 object-cover rounded-lg border border-gray-200"
+            className="w-full max-h-96 object-cover rounded-lg border border-warm-200"
           />
 
           <h1 className="text-2xl font-bold text-gray-900 mt-6">{meal.strMeal}</h1>
@@ -109,7 +124,7 @@ export default function RecipeDetails() {
             </a>
           )}
 
-          <div className="border border-gray-200 rounded-lg p-4">
+          <div className="border border-warm-200 rounded-lg p-4 bg-white">
             <h2 className="text-sm font-bold text-gray-900 uppercase tracking-wide mb-4">
               Ingredients
             </h2>

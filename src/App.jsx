@@ -8,7 +8,7 @@ import About from './pages/About'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-800">
+    <div className="min-h-screen bg-warm-50 text-gray-800">
       <Navbar />
       <ScrollToTop />
       <main className="max-w-5xl mx-auto">
