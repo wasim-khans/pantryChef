@@ -6,7 +6,7 @@
 | 2 | Set up project structure (components, pages, services, utils) | Done |
 | 3 | Build MealDB API service layer (`mealAPI.js`) | Done |
 | 4 | Build localStorage utility (`storage.js`) | Done |
-| 5 | Build Navbar component | Pending |
+| 5 | Build Navbar component | Done |
 | 6 | Build Home page (search, recipe cards, surprise me) | Pending |
 | 7 | Build Recipe Details page | Pending |
 | 8 | Build Favorites page | Pending |
