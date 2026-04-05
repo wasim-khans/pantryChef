@@ -14,7 +14,7 @@ export default function About() {
           </h1>
           <p className="text-sm text-gray-600 leading-relaxed mb-8">
             PantryChef is a recipe discovery app built to help you cook with what you already
-            have. Search by dish name or enter ingredients from your fridge — no more food
+            have. Search by dish name or enter ingredients from your fridge, no more food
             waste, no more staring blankly at the pantry. Powered by TheMealDB API.
           </p>
 
@@ -71,15 +71,15 @@ export default function About() {
                 <p className="font-medium text-gray-900">Muhammad Wasim Khan</p>
               </div>
               <hr className="border-gray-200" />
+              {/* GitHub link hidden for now */}
               <div>
-                <p className="text-xs text-gray-400 uppercase tracking-wider">GitHub</p>
+                <p className="text-xs text-gray-400 uppercase tracking-wider">Contact</p>
                 <a
-                  href="https://github.com/wasim-khans/pantryChef"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="mailto:muhammadwasimkhan8@gmail.com"
                   className="font-medium text-gray-900 hover:underline"
+                  title="Send me an email"
                 >
-                  github.com/wasim-khans/pantryChef
+                  muhammadwasimkhan8@gmail.com
                 </a>
               </div>
               <hr className="border-gray-200" />
